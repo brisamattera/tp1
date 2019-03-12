@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel= "stylesheet" type="text/css" href="cssss.css">
+ 		<title>Ejercicio 14</title>
+	</head>
+	<body background="foto2.jpg">
+		<h1> formulario </h1>
+		<form action="send.php" method="post">
+			<p>Ingrese su mail:
+			<input type="text" name="mail" size="20">
+			<br>
+			Ingrese su contraseña:
+			<input type="password" name="clave" size="20">
+			<br>
+			Ingrese detalle de la consulta:
+			<textarea name="comentarios" rows="5" cols="60"></textarea>
+			<br>
+			Ingrese estado civil:
+			<br>
+			<input type="radio" name="estadoc" value="1">Soltero<br>
+			<input type="radio" name="estadoc" value="2">Casado<br>
+			<input type="radio" name="estadoc" value="3">Es complicado
+			<br>
+			Ingrese el nivel de escolarización:
+			<select name="escuela">
+ 			<option value="1">Primario</option>
+ 			<option value="2">Secundario</option>
+ 			<option value="3">Universitario</option>
+			</select>
+			<br>
+			Ingrese lenguajes de programación que sepa:
+			<select name="lenguajes[]" size="4" multiple>
+ 			<option value="1">C++</option>
+ 			<option value="2">C#</option>
+ 			<option value="3">PHP</option>
+ 			<option value="4">HTML</option>
+ 			<option value="5">CSS</option>
+ 			<option value="6">SQL</option>
+			</select>
+			<br>
+			Seleccione idioma que sepa:
+			<select name="idiomas">
+			<optgroup label="Ingles">
+ 				<option value="1">Nivel bajo</option>
+ 				<option value="2">Nivel medio</option>
+ 				<option value="3">Nivel alto</option>
+			</optgroup>
+			<optgroup label="Portugues">
+ 				<option value="4">Nivel bao</option>
+ 				<option value="5">Nivel medio</option>
+				<option value="6">Nivel alto</option>
+			</optgroup>
+			</select>
+			<br>
+		</p>
+		
+			<fieldset>
+			<legend><h3>Datos personales</h3></legend>
+				
+				<h2>Apellido y nombre:
+				<input type="text" name="nombre" size="30"><br>
+				Documento de identidad:
+				<input type="text" name="dni" size="8"><br>
+				Fecha de nacimiento:
+				<input type="text" name="fechanacimiento" size="12"><br>
+				Dirección:
+				<input type="text" name="direccionpersona" size="30"><br>
+			</fieldset>
+		</h2>
+			<br>
+			<input type="submit" value="enviar">
+		</form>
+	</body>
+</html>
